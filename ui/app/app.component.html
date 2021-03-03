@@ -1,0 +1,15 @@
+
+<table class="tg" *ngFor="let sampleType of message$">
+	<tr>
+		<th class="tg-9xye">Timestamp</th>
+		<th class="tg-9xye">Type</th>
+		<th class="tg-9xye">Value</th>
+	</tr>
+	<tr *ngFor="let sample of sampleType">
+		<td class="tg-qdev" *ngFor="let value of sample">
+			{{ value }}
+		</td>
+	</tr>
+</table>
+
+<app-file-upload></app-file-upload>
